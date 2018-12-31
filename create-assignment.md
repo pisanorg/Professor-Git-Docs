@@ -73,7 +73,7 @@ This potentially means that students could bypass assignment deadlines.
 
 In addition, students also have the ability to amend commits.
 
-#### Mitigating the Force-Pushing Issue
+#### Mitigating the Commit Timestamp Issue
 
 There are a few ways to mitigate this issue:
 
@@ -164,9 +164,54 @@ Classroom Assistant will download projects under the following folder structure:
 It may be beneficial to require that students include their full name and student IDs in their README files,
 or have a table of names and usernames.
 
+## Group Assignments
+
+In addition to individual assignments, GitHub Classroom supports group assignments.
+These allow multiple users to work together.
+
+![Screenshot of the "Create new Group Assignment" page.][group-assignment]
+
+This page features some settings that are not specififed on the individual
+assignment page. Here you can set the maximum number of members in each team,
+and name the set of teams that will be created after this step.
+
+The process is nearly the same for students to join the assignment. They'll be prompted
+to either create or join a group when accepting the assignment.
+
+![Screenshot of accepting the group assignment.](img/student-accept-group-assignment.png)
+
+### Managing Group Members
+
+If you need to manage the set
+of users that are in a team, you can do so by visiting the teams page under the
+organization itself, and adding or removing group members. Students are able
+to leave teams, and join other teams themselves. Currently, there is no way
+to prevent users from leaving and joining other teams.
+
+To do this:
+
+1. Navigate to your GitHub organization. github.com/orgname
+
+![Screenshot of a GitHub organization](img/org-teams-tab.png)
+
+2. Click on the "Teams" tab.
+
+![Screenshot of managing a GitHub team.](img/click-team.png)
+
+3. Click on the name of the team you wish to manage.
+
+4. Click on the "Members" tab.
+
+![Screenshot of managing team members.](img/manage-team-members.png)
+
+5. Use this page to add and remove team members.
+
+![Screenshot of adding a user to a team.](img/add-user-to-team.png)
+
 [class-dash]: https://classroom.github.com/classrooms
 [screenshot-new-indiv]: img/new-individual-assignment.png
 [screenshot-recommended-indiv]: img/indiv-recommended.png
 [screenshot-assignment-confirm]: img/assignment-confirmation.png
 [student-pack]: https://education.github.com/pack
 [classroom-assistant]: https://classroom.github.com/assistant
+[group-assignment]: img/new-group-assignment.png
