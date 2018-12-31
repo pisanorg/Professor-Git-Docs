@@ -13,31 +13,33 @@ On this page, you can configure the parameters for the new assignment.
 By default GitHub uses some settings which may be a poor fit for graded
 assignments, so these should be changed.
 
-### Repository Privacy 
+### Repository Privacy
 
-By default, GitHub will try to use Public repositories for student
-assignments. 
-[As part of the GitHub Student Developer Pack,][student-pack]
-all students with a `.edu` e-mail address should have free use
-of GitHub private repos, at no cost to them.
+This setting is _"Public"_ by default, but
+for most assignments, you'll want to have this set to _"Private"_.
 
-Historically, some students have had trouble redeeming this benefit, and have had
-to contact GitHub support. If this is a required step for students to submit their assignments,
-it may be best to allow leniency if they are stuck.
+This controls who can see the assigments. These will always be created
+under your GitHub organization, so you'll retain full control of them at all
+times.
 
-TODO edit the previous section
+In addition, you can authorize other users like graders and assistants to have
+access to these repos.
 
-If you have a repo with unlimited private repositories, then your students can freely
-use private repositories that under your control, without having to verify as a student first.
+As long as the repo is private, it can not be accessed publicly.
+
+Students **do not** have to accept the GitHub student pack, verify their e-mail
+address as a `.edu`, or pay any money to have access to these private repos,
+because they belong to this organization.
 
 ### Admin Access
 
-It may be unwise to give students Admin permissions in their repository.
-Some features, like force-pushing allow students to amend commits and potentially spoof
-the timestamps of when code was committed.
+Typically, you'll want to leave this unchecked. Giving students Admin access 
+can let them do things that you may not want, like deleting the repo or making
+it public.
 
-In addition, the student's local time may affect things. TODO might appear that they are committing
-from the future. github does not stop them from doing so
+Disabling admin access does not prevent students from force-pushing to the master
+branch. This means that they will be able to amend commit messages, authors,
+and timestamps.
 
 ### Starter Code
 
@@ -58,7 +60,7 @@ assistant client does not respect these deadlines.
 The absolute best way to ensure that students work on assignments past the due date is to
 download them as soon as they are due.
 
-#### The Force-Pushing Issue
+#### The Commit Timestamp Issue
 
 GitHub Classroom has a fairly significant flaw with it's implementation of assignment deadlines.
 
@@ -68,6 +70,8 @@ If a machines time is set to some time in the past or future, then commit timest
 
 GitHub Classroom does **not** validate the timestamps of commits.
 This potentially means that students could bypass assignment deadlines.
+
+In addition, students also have the ability to amend commits.
 
 #### Mitigating the Force-Pushing Issue
 
