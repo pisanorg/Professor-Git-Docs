@@ -48,7 +48,7 @@ Note that all students will have access to the history contained in this repo, i
 to the changes that have been made to the sample repo. Do not keep a solution to the assignment
 in the same repository.
 
-### Deadline
+### Deadlines
 
 You can set a deadline of when code is due. Note that this will not prevent students from making
 changes after the deadline, but when viewing project repos from the website, the submission
@@ -58,7 +58,28 @@ assistant client does not respect these deadlines.
 The absolute best way to ensure that students work on assignments past the due date is to
 download them as soon as they are due.
 
-TODO - need to see if I can spoof the due date by force pushing or amending dates
+#### The Force-Pushing Issue
+
+GitHub Classroom has a fairly significant flaw with it's implementation of assignment deadlines.
+
+[Git allows users to amend the date of commits,](https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git)
+and commit timestamps are set by the **local time** on the machine.
+If a machines time is set to some time in the past or future, then commit timestamps will use this time.
+
+GitHub Classroom does **not** validate the timestamps of commits.
+This potentially means that students could bypass assignment deadlines.
+
+#### Mitigating the Force-Pushing Issue
+
+There are a few ways to mitigate this issue:
+
+1. Download all of the submissions as soon as possible after the deadline.
+    This may not be ideal for a strict deadline, and does not prevent submissions after the deadline.
+
+2. Require students to turn in their last commit hash (that they want graded) to Canvas, on the due date.
+    The time would be confirmed with Canvas, and the student would have no way to get around it.
+
+3. Set up a webhook in GitHub, and use it to notify you when students push commits (could be to an empty Slack or Discord channel).
 
 ### Recommended Settings
 
