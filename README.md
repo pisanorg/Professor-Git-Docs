@@ -17,3 +17,18 @@ This repo contains information for Professors or Instructors who are setting up 
 ## Other Topics
 
 [The repository containing student documentation can be found here. (https://github.com/pisanorg/Student-Git-Docs) Please share this with your students!](https://github.com/pisanorg/Student-Git-Docs)
+
+# Additional Resources
+
+- [Official Git Documentation][git-scm-doc]
+- [GitHub Documentation][github-doc]
+- [GitHub Classroom Education Community][gh-class-doc]
+
+# Contributing
+
+If you would like to contribute back to this documentation, please feel free to submit a new Issue or Pull Request on Github.
+Improvements, typo fixes, and suggested tips are all welcome.
+
+[git-scm-doc]: https://git-scm.com/doc
+[github-doc]: https://guides.github.com/
+[gh-class-doc]: https://education.github.community/
