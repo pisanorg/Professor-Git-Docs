@@ -31,6 +31,11 @@ Students **do not** have to accept the GitHub student pack, verify their e-mail
 address as a `.edu`, or pay any money to have access to these private repos,
 because they belong to this organization.
 
+If you do not have the GitHub Education discount (or do not pay) for private repos, you will
+see this error when trying to create an assignment with private repos:
+
+![error when creating assignment without private repos](img/private-assignment-without-gh-edu.PNG)
+
 ### Admin Access
 
 Typically, you'll want to leave this unchecked. Giving students Admin access 
