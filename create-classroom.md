@@ -41,7 +41,7 @@ read-access to student's repositories.
 
 GitHub Classroom has a "Roster" system, which can be used to identify students by an identifier that you give them,
 instead of their GitHub username. We still recommend asking students to create a `README.md` or `README.txt` that has
-their full name though.
+their full name.
 
 ![screenshot of setting up roster](img/setup-roster.PNG)
 
