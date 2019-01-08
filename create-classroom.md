@@ -47,7 +47,7 @@ their full name though.
 
 This step does not magically _"add"_ students to your class.
 When students first log into GitHub classroom, they'll be prompted to select their roster identifier out of a list.
-Once they've accepted their first assignment from your class, then they'll be marked as _"in"_ the class.
+Once they've accepted their first assignment from your class they'll be marked as _"in"_ the class.
 
 ![screenshot of picking roster id](img/authorize-github-classroom-2.PNG)
 
